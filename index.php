@@ -1,5 +1,5 @@
 <?php
-session_start();
+include "session_cek.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,7 +32,7 @@ body {
 }
 #menu ul li.utama{
 	display: inline-table;
-}			
+}
 #menu ul li:hover{
 	background-color: #0033cc;
 }
@@ -63,7 +63,7 @@ body {
 	background-image: url("img/foKSP.jpg");
 	background-attachment: fixed;
 }
- 
+
 #footer{
 	text-align: center;
 	padding: 20px;
@@ -112,6 +112,7 @@ body {
 				</ul>
 			</li>
 			<li class="utama" style="float:right"><a href="inc/logout.php">Logout</a></li>
+			<li class="utama" style="float:right"><a href="#">Halo <b> <?php echo $_SESSION['username']; ?> </b> </a></li>
 		</ul>
 	</div>
 
@@ -138,7 +139,7 @@ body {
 	} else {
 		echo "404! Halaman tidak ditemukan";
 	}
-	?> 
+	?>
 	</div>
 
 	<div id="footer">

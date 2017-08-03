@@ -1,5 +1,5 @@
 <?php
-include "session_cek.php";	
+ 
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,7 +24,7 @@ body {
 	color: #fff;
 	font-size: 20px;
 	background-color: #339966;
-	border-top-right-radius: 10px; 
+	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	border-bottom: 3px solid #336666;
 }
@@ -65,13 +65,13 @@ input{
 
 	<div id="inputan">
 	<form action="auth.php" method="post">
-		<div> 
-			<input type="text" name="User" placeholder="Username" class="lg" />
+		<div>
+			<input type="text" name="username" placeholder="Username" class="lg" />
 		</div>
-		<div style="margin-top: 10px;"> 
-			<input type="Pass" name="Pass" placeholder="Password" class="lg" />
+		<div style="margin-top: 10px;">
+			<input type="password" name="password" placeholder="Password" class="lg" />
 		</div>
-		<div style="margin-top: 10px;"> 
+		<div style="margin-top: 10px;">
 			<input type="Submit" name="login" value="Login" class="btn" />
 		</div>
 	</form>
